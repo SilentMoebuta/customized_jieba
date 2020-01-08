@@ -54,6 +54,11 @@
 
     cus_jieba的运行速度大约是pyjieba的8~10倍。
     
+    举例：
+    输入： 小米8全网通版内存蓝色
+    python jieba： ['小米', '8', '全', '网通', '版', '内存', '蓝色']
+    python jieba + set_dictionary：  ['小米', '8', '全网', '通版', '内存', '蓝色']
+    cus_jieba(set_dictionary + generate hmm model): ['小米', '8', '全网通版', '内存', '蓝色']
     
 
 ## 使用说明
