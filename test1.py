@@ -46,13 +46,12 @@ def cusjieba():
 
 
 if __name__ == '__main__':
-    # cProfile.run('pyjieba()')
-    # cProfile.run('cusjieba()')
-    # for x in text:
-    #     res1 = ','.join(jieba.cut(x)).split(',')
-    #     res2 = jieba_cut(x)
-    #     print(res1)
-    #     print(res2)
-    #     print()
-    print(','.join(jieba_cut("个人所得税")).split(','))
-    print(jieba_cut("个人所得税"))
+    cProfile.run('pyjieba()')
+    cProfile.run('cusjieba()')
+    for x in text:
+        res1 = ','.join(jieba.cut(x)).split(',')
+        res2 = jieba_cut(x)
+        print(res1)
+        print(res2)
+        print()
+
