@@ -6,9 +6,9 @@
 需要用cgo在目标机器上对gojieba进行编译，不如直接用cppjieba编译动态库
 通过反推hmm模型的参数来做客制化，效率不够高。期待日后能够自己编写一个vocab+CRF的分词插件
   
-~~- 更改自[gojieba](https://github.com/yanyiwu/gojieba)~~
-~~- 用户词典相同时，效果和python原生jieba效果相同，性能提高~~
-~~- 根据用户词典重新统计hmm模型数据后，效果略优于原版jieba（具体可看对比测试）~~ 
+~~- 更改自[gojieba](https://github.com/yanyiwu/gojieba)  ~~
+~~- 用户词典相同时，效果和python原生jieba效果相同，性能提高  ~~
+~~- 根据用户词典重新统计hmm模型数据后，效果略优于原版jieba（具体可看对比测试）  ~~ 
 
 ## 文件结构
 ```
